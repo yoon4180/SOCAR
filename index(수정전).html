@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쏘카 모작</title>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/index.css">
+
+    <script>
+        window.onload = () => {
+            let navBtn = document.getElementsByClassName('nav_btn')[0];
+            let nav = document.getElementsByClassName('nav')[0];
+            let closeBtn = document.getElementsByClassName('close_btn')[0];
+            let main = document.getElementsByClassName('main')[0]; //배경 안까매짐
+
+            navBtn.addEventListener('click', () => {
+                nav.classList.add('active');
+            });
+            closeBtn.addEventListener('click', () => {
+                nav.classList.remove('active');
+            });
+            main.addEventListener('click', () => {
+                if (nav.classList.contains('active')) {
+                    nav.classList.remove('active');
+                }
+            })
+
+            //sec-01 슬라이드
+            var swiper = new Swiper(".sec01swiper", {
+                spaceBetween: 30,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="inner">
+
+            <h1 class="logo">
+                <a href="#"><img src="img/logo.png" alt="로고"></a>
+            </h1><!-- logo -->
+
+            <button class="nav_btn">
+                <img src="img/menu.png" alt="메뉴열기">
+            </button><!-- nav_btn -->
+
+            <nav class="nav">
+                <button class="close_btn">
+                    <img src="img/close_btn.svg" alt="메뉴닫기">
+                </button><!-- close_btn -->
+                <ul class="gnb">
+                    <li><a href="#">쏘카</a></li>
+                    <li><a href="#">쏘카플랜</a></li>
+                    <li><a href="#">모두의주차장</a></li>
+                    <li><a href="#">쏘카 엔터프라이즈</a></li>
+                    <li><a href="#">쏘카일레클</a></li>
+                    <li><a href="#">쏘카 항공권</a></li>
+                    <li><a href="#">(주)쏘카</a></li>
+                    <li><a href="#">쏘카 브랜드 센터</a></li>
+                </ul><!-- gnb -->
+            </nav><!-- nav -->
+        </div><!-- inner -->
+    </header><!-- header -->
+
+    <main class="main">
+        <div class="main_visual">
+            <img src="img/main_visual.png" alt="메인비주얼">
+        </div><!-- main_visual -->
+        <div class="text">
+            <strong>Lifetime Mobility</strong>
+            <p>라이프타임 모빌리티 플랫폼, 쏘카</p>
+        </div><!-- text -->
+        <div class="app">
+            <div class="main_btn">
+                <img src="img/image 19.png" alt="다운로드">
+                <p>쏘카 앱 다운로드 </p>
+            </div><!-- main_btn -->
+        </div><!-- app -->
+    </main><!-- main -->
+
+    <section class="sec-01">
+        <h2>차가 필요한 모든 순간</br>
+        <b>쏘카 카셰어링</b></h2>
+        <!-- Swiper -->
+        <div class="swiper sec01swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="text">
+                        <h3>필요한 시간만큼</h3>
+                        <p>간단한 장보기부터 주말여행까지</br>
+                            10분 단위로 원하는 만큼만 이용</p>
+                    </div><!-- text -->
+                    <img src="img/slide.png" alt="">
+                </div><!-- swiper-slide -->
+                <div class="swiper-slide">
+                    <div class="text">
+                        <h3>다양한 차종을</h3>
+                        <p>간단한 장보기부터 주말여행까지</br>
+                            10분 단위로 원하는 만큼만 이용</p>
+                    </div><!-- text -->
+                    <img src="img/slide - 2.png" alt="">
+                </div><!-- swiper-slide -->
+                <div class="swiper-slide">
+                    <div class="text">
+                        <h3>24시간 언제나</h3>
+                        <p>간단한 장보기부터 주말여행까지</br>
+                            10분 단위로 원하는 만큼만 이용</p>
+                    </div><!-- text -->
+                    <img src="img/slide - 3.png" alt="">
+                </div><!-- swiper-slide -->
+                <div class="swiper-slide">
+                    <div class="text">
+                        <h3>전국 어디서나</h3>
+                        <p>간단한 장보기부터 주말여행까지</br>
+                            10분 단위로 원하는 만큼만 이용</p>
+                    </div><!-- text -->
+                    <img src="img/slide - 4.png" alt="">
+                </div><!-- swiper-slide -->
+            </div><!-- swiper-wrapper -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div><!-- sec01swiper -->
+    </section><!-- sec-01 -->
+</body>
+
+</html>
