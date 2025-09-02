@@ -43,6 +43,7 @@ button {
 
 .main .inner h3 {
     font-size: 37px;
+    font-weight: 400;
     margin-bottom: 96px;
 }
 
@@ -541,6 +542,7 @@ button {
 
 /* 768 이하 */
 @media screen and (max-width: 768px) {
+
     .header .inner,
     .footer .inner {
         width: calc(100% - 32px);
@@ -548,5 +550,112 @@ button {
 
     .main .inner {
         width: calc(100% - 32px);
+    }
+
+    .main .inner h3 {
+        font-size: 24px;
+        margin-bottom: 48px;
+    }
+
+    .header {
+        height: 60px;
+    }
+
+    .header .inner .logo {
+        height: 20.44px;
+    }
+
+    .header .inner .menu_open {
+        height: 19.88px;
+    }
+
+    .main_visual .text h2 {
+        font-size: 42px;
+    }
+
+    .main_visual .text p {
+        font-size: 18px;
+    }
+
+    .main_visual .visual_btn {
+        max-width: none;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+    }
+
+    .main_visual .visual_btn a {
+        width: 100%;
+        height: 60px;
+        border-radius: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main_visual .visual_btn a img {
+        width: 14px;
+    }
+
+    .main_visual .visual_btn a span {
+        font-size: 18px;
+    }
+
+    .section-01 {
+        padding: 40px 0 32px;
+    }
+
+    .section-01 .inner .slides .list .item {
+        height: 240px;
+    }
+
+    .section-01 .inner .slides .list .item .text {
+        padding: 20px 24px;
+    }
+
+    .section-01 .inner .slides .list .item .text strong {
+        font-size: 20px;
+    }
+
+    .section-01 .inner .slides .list .item .text p {
+        font-size: 12px;
+        margin-top: 2px;
+    }
+
+    .section-01 .inner .slides .slide_navigation button {
+        width: 32px;
+        height: 31px;
+    }
+
+    .section-01 .inner .slides .slide_navigation button img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .section-02 {
+        padding: 40px 0 80px;
+    }
+
+    .section-02 .inner .list .item a .text_wrap {
+        padding: 20px;
+    }
+
+    .section-02 .inner .list .item a .text_wrap .text strong {
+        font-size: 24px;
+    }
+
+    .section-02 .inner .list .item a .text_wrap .text p {
+        font-size: 15px;
+    }
+
+    .section-02 .inner .list .item a .text_wrap .item_btn {
+        width: 43.7px;
+        height: 43.7px;
+    }
+
+    .section-02 .inner .list .item a .text_wrap .item_btn img {
+        width: 100%;
+        height: 100%;
     }
 }
